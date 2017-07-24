@@ -1,0 +1,73 @@
+@import 'compass/css3';
+@import 'mixin';
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v22/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+  font: {
+    size: 13px;
+    family: Open Sans, sans-serif;
+  }
+}
+
+body {
+  background: url(../images/Wiki-background.jpg) 0 / cover;
+}
+
+/**
+ * Overwrited Bootstrap Style
+ */
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a, a:hover, a:focus {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #000;
+
+  &:hover, &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+@import 'bot'
